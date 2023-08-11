@@ -10,12 +10,13 @@ class Screen2 extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
-          //color: Colors.blue,
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.red,
+            backgroundColor: Colors.blue,
           ),
           child: Text('Go Back To Screen 1'),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
       ),
     );
